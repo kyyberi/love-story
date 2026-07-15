@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A private romantic story for a newly wedded wife."
+    />
+    <meta name="color-scheme" content="light" />
+    <title>Câu chuyện của chúng ta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#story">Skip to story</a>
+
+    <section class="opening" aria-labelledby="opening-title">
+      <div class="opening__sky" aria-hidden="true">
+        <!-- Replace assets/photos/opening.webp with an opening photo. The CSS landscape remains as fallback. -->
+        <img class="opening__photo" src="assets/photos/opening.webp" alt="" />
+        <span class="particle p1"></span>
+        <span class="particle p2"></span>
+        <span class="particle p3"></span>
+        <span class="moon"></span>
+        <span class="horizon h1"></span>
+        <span class="horizon h2"></span>
+      </div>
+      <div class="opening__content">
+        <p class="eyebrow">Our story</p>
+        <h1 id="opening-title">Chào vợ yêu</h1>
+        <p class="lead">Câu chuyện của chúng ta</p>
+        <button class="primary-button" id="startStory" type="button">
+          Mở câu chuyện
+        </button>
+      </div>
+    </section>
+
+    <main id="story" class="story" tabindex="-1">
+      <section class="story-section two-worlds reveal" aria-labelledby="worlds-title">
+        <div class="section-kicker">Hai thế giới</div>
+        <h2 id="worlds-title">Hai thế giới</h2>
+        <div class="world-grid">
+          <article class="world-card world-card--finland">
+            <div class="landscape finland-art" aria-hidden="true">
+              <img class="world-photo" src="assets/photos/finland.webp" alt="" loading="lazy" />
+              <span class="lake"></span>
+              <span class="tree tree-a"></span>
+              <span class="tree tree-b"></span>
+              <span class="tree tree-c"></span>
+              <span class="snow s1"></span>
+              <span class="snow s2"></span>
+              <span class="cup"></span>
+            </div>
+            <h3>Anh từ Phần Lan</h3>
+            <p>Rừng, hồ, cà phê, và sự bình yên.</p>
+          </article>
+
+          <article class="world-card world-card--vietnam">
+            <div class="landscape vietnam-art" aria-hidden="true">
+              <img class="world-photo" src="assets/photos/vietnam.webp" alt="" loading="lazy" />
+              <span class="sunset"></span>
+              <span class="mountain m1"></span>
+              <span class="mountain m2"></span>
+              <span class="field f1"></span>
+              <span class="field f2"></span>
+              <span class="meal"></span>
+              <span class="flower"></span>
+            </div>
+            <h3>Em từ Việt Nam</h3>
+            <p>Ấm áp, gia đình, tiếng cười, và hương hoa.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="story-section journey reveal" aria-labelledby="journey-title">
+        <div class="section-kicker">Then we met</div>
+        <h2 id="journey-title">Rồi chúng ta gặp nhau</h2>
+        <p class="support">Ở đúng thời điểm</p>
+        <div class="route-map" aria-label="Finland and Vietnam paths meeting in Abu Dhabi">
+          <svg viewBox="0 0 900 380" role="img" aria-labelledby="routeTitle routeDesc">
+            <title id="routeTitle">Symbolic journey map</title>
+            <desc id="routeDesc">Finland and Vietnam routes meet in Abu Dhabi.</desc>
+            <path class="route-line route-line--left" d="M120 105 C270 65 340 170 450 188" />
+            <path class="route-line route-line--right" d="M780 270 C640 320 560 220 450 188" />
+            <circle class="route-dot" cx="120" cy="105" r="12" />
+            <circle class="route-dot" cx="780" cy="270" r="12" />
+            <circle class="route-dot route-dot--meet" cx="450" cy="188" r="16" />
+            <text x="120" y="76" text-anchor="middle">Phần Lan</text>
+            <text x="780" y="245" text-anchor="middle">Việt Nam</text>
+            <text x="450" y="230" text-anchor="middle">Abu Dhabi</text>
+          </svg>
+        </div>
+        <p class="english">Then we met. At the right time.</p>
+      </section>
+
+      <section class="story-section right-time reveal" aria-labelledby="time-title">
+        <div class="paths" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+        <h2 id="time-title">Không quá sớm</h2>
+        <p class="time-line">Không quá muộn</p>
+        <p class="time-main">Vừa đúng lúc</p>
+        <p class="english">Not too early. Not too late. Just at the right time.</p>
+      </section>
+
+      <section class="story-section differences reveal" aria-labelledby="differences-title">
+        <div class="section-kicker">Different, but right</div>
+        <h2 id="differences-title">Khác nhau, nhưng rất hợp nhau</h2>
+        <div class="comparison-grid">
+          <article class="comparison-card">
+            <div class="mini-compare">
+              <span>Quiet</span>
+              <span>Conversation</span>
+            </div>
+            <h3>Anh thích yên tĩnh</h3>
+            <p>Em mang đến niềm vui</p>
+          </article>
+          <article class="comparison-card">
+            <div class="mini-compare">
+              <span>Coffee</span>
+              <span>Family meal</span>
+            </div>
+            <h3>Một tách cà phê</h3>
+            <p>Một bàn đầy thức ăn</p>
+          </article>
+          <article class="comparison-card">
+            <div class="clock-compare" aria-hidden="true">
+              <span class="clock exact"></span>
+              <span class="clock flexible"></span>
+            </div>
+            <h3>Năm phút của anh</h3>
+            <p>Năm phút của em</p>
+          </article>
+          <article class="comparison-card comparison-card--final">
+            <h3>Khác nhau</h3>
+            <p>Nhưng rất hợp nhau</p>
+            <small>Different. But right for each other.</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="story-section moments reveal" aria-labelledby="moments-title">
+        <div class="section-kicker">Small moments</div>
+        <h2 id="moments-title">Tình yêu ở những điều bình thường</h2>
+        <div class="moment-gallery" aria-label="Small shared moments">
+          <article><span aria-hidden="true">☕</span><p>Cùng nhau cười</p></article>
+          <article><span aria-hidden="true">🍲</span><p>Cùng nhau ăn</p></article>
+          <article><span aria-hidden="true">↗</span><p>Cùng nhau đi</p></article>
+          <article><span aria-hidden="true">⌂</span><p>Cùng nhau về nhà</p></article>
+        </div>
+        <!-- Optional couple photo: replace assets/photos/together.webp. The placeholder remains complete if the file is missing. -->
+        <figure class="photo-frame photo-frame--small">
+          <img src="assets/photos/together.webp" alt="A shared everyday moment together" loading="lazy" />
+          <figcaption>assets/photos/together.webp</figcaption>
+        </figure>
+        <div class="memory-photos" aria-label="More private photos from our story">
+          <figure>
+            <img src="assets/photos/20260304_195712.webp" alt="Private memory photo" loading="lazy" />
+            <figcaption>Một khoảnh khắc</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photos/20260513_160446.webp" alt="Private memory photo" loading="lazy" />
+            <figcaption>Bên nhau</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photos/20260527_161645.webp" alt="Private memory photo" loading="lazy" />
+            <figcaption>Những ngày đẹp</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/photos/IMG-20260527-WA0030.webp" alt="Private memory photo" loading="lazy" />
+            <figcaption>Luôn nhớ</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="story-section wedding reveal" aria-labelledby="wedding-title">
+        <!-- Replace assets/photos/wedding.webp with your wedding photo. -->
+        <figure class="wedding-photo">
+          <img src="assets/photos/wedding.webp" alt="Our wedding photo" loading="lazy" />
+          <figcaption>Wedding photo placeholder</figcaption>
+        </figure>
+        <div class="wedding-copy">
+          <div class="rings" aria-hidden="true"><span></span><span></span></div>
+          <h2 id="wedding-title">Bây giờ em là vợ anh</h2>
+          <p>Chúng ta là gia đình</p>
+          <p class="english">Now you are my wife. We are a family.</p>
+          <p class="date">June 2026</p>
+        </div>
+      </section>
+
+      <section class="story-section word-change reveal" aria-labelledby="word-title">
+        <div class="phone" aria-label="Message changing from Anh to Chồng">
+          <div class="phone__top"></div>
+          <div class="message-bubble">
+            <span class="word word--anh">Anh</span>
+            <span class="word word--chong">Chồng</span>
+          </div>
+        </div>
+        <h2 id="word-title">Một từ nhỏ</h2>
+        <p>Một niềm vui lớn</p>
+        <p class="english">One small word. One great joy.</p>
+      </section>
+
+      <section class="story-section agreement reveal" aria-labelledby="agreement-title">
+        <article class="agreement-card">
+          <p class="english">Lifetime agreement</p>
+          <h2 id="agreement-title">Thỏa thuận trọn đời</h2>
+          <ol>
+            <li>Sự im lặng của người Phần Lan không có nghĩa là giận</li>
+            <li>Không được hỏi tại sao có quá nhiều thức ăn</li>
+            <li>Cả hai đều có quyền lấy chăn</li>
+            <li>Gia đình luôn có chỗ tại bàn</li>
+            <li>Mỗi ngày phải có ít nhất một nụ cười</li>
+          </ol>
+          <div class="stamp" aria-label="Agreed">Đã đồng ý</div>
+          <p class="no-cancel">Không có điều khoản hủy</p>
+          <p class="english">No cancellation clause</p>
+        </article>
+      </section>
+
+      <section class="story-section future reveal" aria-labelledby="future-title">
+        <div class="section-kicker">Future chapter</div>
+        <h2 id="future-title">Chương tiếp theo</h2>
+        <div class="timeline">
+          <article>
+            <span class="timeline-icon" aria-hidden="true">●</span>
+            <h3>Hôm nay</h3>
+            <p>Vợ chồng</p>
+          </article>
+          <article>
+            <span class="timeline-icon" aria-hidden="true">⌂</span>
+            <h3>Ngày mai</h3>
+            <p>Xây tổ ấm</p>
+          </article>
+          <article>
+            <span class="timeline-icon" aria-hidden="true">✈</span>
+            <h3>Sau này</h3>
+            <p>Gia đình, Việt Nam, Phần Lan, những chuyến đi, những buổi sáng bình thường</p>
+          </article>
+          <article>
+            <span class="timeline-icon" aria-hidden="true">∞</span>
+            <h3>Vẫn đang viết</h3>
+            <p class="english">Still writing</p>
+          </article>
+        </div>
+        <!-- Optional future photo: replace assets/photos/future.webp. -->
+        <figure class="photo-frame photo-frame--small">
+          <img src="assets/photos/future.webp" alt="A future chapter placeholder" loading="lazy" />
+          <figcaption>assets/photos/future.webp</figcaption>
+        </figure>
+      </section>
+
+      <section class="story-section final-scene reveal" aria-labelledby="final-title">
+        <button class="surprise-star" id="surpriseStar" type="button" aria-label="Reveal a hidden message"></button>
+        <div class="final-message">
+          <div class="big-heart" aria-hidden="true"></div>
+          <p>Cảm ơn em</p>
+          <p>Vì đã đến bên anh</p>
+          <h2 id="final-title">Anh yêu em</h2>
+          <p>Vợ của anh</p>
+          <p class="sweet-line">Trái tim này là của em</p>
+          <p class="english">Thank you. For coming into my life. I love you. My wife.</p>
+          <p class="surprise" id="surpriseMessage" hidden>
+            Anh vẫn chọn em <span>I still choose you</span>
+          </p>
+          <button class="secondary-button" id="restartStory" type="button">
+            Xem lại từ đầu
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
