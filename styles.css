@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: only light;
   --bg: #f5eee4;
   --surface: #fffaf3;
   --text: #2e2925;
@@ -25,12 +25,22 @@ html {
 }
 
 body {
+  color: var(--text);
+  background: var(--bg);
   margin: 0;
   font-family: var(--sans);
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   min-height: 100svh;
+}
+
+html,
+body,
+.opening,
+.story,
+.story-section {
+  forced-color-adjust: none;
 }
 
 body.story-active {
@@ -1017,6 +1027,28 @@ figcaption {
   display: block;
   color: var(--muted);
   font: 400 1rem var(--sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: only light;
+    --bg: #f5eee4;
+    --surface: #fffaf3;
+    --text: #2e2925;
+    --muted: #786f67;
+    --red: #8f3542;
+    --gold: #b78b4a;
+    --green: #31483b;
+    --blue: #46637d;
+    --line: rgba(46, 41, 37, 0.14);
+    --shadow: 0 24px 70px rgba(46, 41, 37, 0.14);
+  }
+
+  html,
+  body {
+    color: var(--text);
+    background: var(--bg);
+  }
 }
 
 @media (min-width: 760px) {
